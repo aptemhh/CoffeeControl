@@ -20,3 +20,11 @@ C:\Users\Илья\Documents\GitHub\CoffeeControl\CoffeeControl\CoffeeControl\obj
 D:\Google disk B.O\github\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.MaterialsForm.resources
 D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\bin\Debug\CoffeeControl.exe.config
 D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.exe
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\bin\Debug\CoffeeControl.exe
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\bin\Debug\CoffeeControl.pdb
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.csprojResolveAssemblyReference.cache
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.MaterialsForm.resources
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.Form1.resources
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.Properties.Resources.resources
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.csproj.GenerateResource.Cache
+D:\Program Files\gid\CoffeeControl\CoffeeControl\CoffeeControl\obj\Debug\CoffeeControl.pdb
