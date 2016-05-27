@@ -44,7 +44,7 @@ namespace CoffeeControl
         
 
 
-        //Загрузить все данные программы
+        // Загрузить все данные программы
         private void loadAllData()
         {
 
@@ -285,18 +285,18 @@ namespace CoffeeControl
                             mat.pieces = mat.pieces - position.posCount * posMat.pieces;
                             int matId = mat.materials_id;
                             double matQnty = Math.Round(mat.pieces, 3);
-                            //printSysMsg("mat.materials_id  " + matId + "mat.name " + mat.name + " mat.pieces " + mat.pieces);
+                            // printSysMsg("mat.materials_id  " + matId + "mat.name " + mat.name + " mat.pieces " + mat.pieces);
                             
                             query = hostURL+"updateMaterialQuantity.php?materials_id=" + mat.materials_id + "&materialQuantity=" + matQnty;
-                            //string response = GET_http(query);
-                            //printSysMsg(response);
-                            //sysMsgTextBox.Text += Environment.NewLine;
+                            // string response = GET_http(query);
+                            // printSysMsg(response);
+                            // sysMsgTextBox.Text += Environment.NewLine;
                         }
                     }
                 }
             }
             currentChecks.Add(check);
-            //printSysMsg("price" + check.price + "&workerID=" + selectedWorkerID + "&shopID=" + selectedShopID);
+            // printSysMsg("price" + check.price + "&workerID=" + selectedWorkerID + "&shopID=" + selectedShopID);
 
             query = hostURL+"putNewCheckAndGetCheckID.php?price" + check.price + "&workerID=" + selectedWorkerID + "&shopID=" + selectedShopID + "&date=" + check.date;
             int lastCheckId = Convert.ToInt16(GET_http(query));
@@ -305,7 +305,7 @@ namespace CoffeeControl
             {
                 query = hostURL + "putPositionWithCheckID.php?checkID=" + lastCheckId + "&position=" + position.name + "&price=" + position.price + "&quantity=" + position.posCount;
                 string response = GET_http(query);
-                //printSysMsg(response);
+                // printSysMsg(response);
             }
 
             
@@ -409,13 +409,13 @@ namespace CoffeeControl
             openMaterialForm(materName);
         }
 
-        private void button1_Click(object sender, EventArgs e) //старт
+        private void button1_Click(object sender, EventArgs e) // старт
         {
             timer1.Start();
             s = 0; m = 0;
         }
 
-        private void button14_Click(object sender, EventArgs e) //Стоп
+        private void button14_Click(object sender, EventArgs e) // Стоп
         {
             timer1.Stop();
             foreach (Worker work in Workers)
@@ -423,7 +423,7 @@ namespace CoffeeControl
                 if (work.name == WorkerBox.SelectedItem)
                 {
                     work.workerTime += m; sumTime = work.workerTime;
-                    //  textBox1.Text = "Общ. t= " + Convert.ToString( work.workerTime );
+                    // textBox1.Text = "Общ. t= " + Convert.ToString( work.workerTime );
 
                 }
             }
@@ -455,7 +455,7 @@ namespace CoffeeControl
         private void dealButton_Click(object sender, EventArgs e)
         {
             dealWithIt();
-            //GET_http();
+            // GET_http();
         }
 
         public string GET_http (string url)
@@ -473,7 +473,7 @@ namespace CoffeeControl
         {
             foreach (Material mat in Materials)
             {
-            //Material mat = Materials[5];
+            // Material mat = Materials[5];
                 string query = "http://coffee-control.ru/new.php?name=" + mat.name + "&pieces=" + mat.pieces + "&unitName=" + mat.unitName + "&modifier=" + mat.modifier + "&type=" + mat.type + "&shopID=" + selectedShopID;
                 string jsonResult = GET_http(query);
             }
@@ -481,10 +481,10 @@ namespace CoffeeControl
 
         public void loadMaterialsFromServer()
         {
-            //string url = "http://localhost/coffeeControl/getMaterials.php";
+            // string url = "http://localhost/coffeeControl/getMaterials.php";
             string url = hostURL+"getMaterials.php";
             string json = GET_http(url);
-            //sysMsgTextBox.Text = json;            
+            // sysMsgTextBox.Text = json;            
 
             List<Material> responseMaterialsList = new List<Material>();
 
@@ -499,8 +499,8 @@ namespace CoffeeControl
                         mat.materials_id = respMat.materials_id;
                         mat.name = respMat.name;
                         mat.pieces = respMat.pieces;
-                        //mat.type = respMat.type;
-                        //mat.modifier = respMat.modifier;
+                        // mat.type = respMat.type;
+                        // mat.modifier = respMat.modifier;
                     }
 
                 }

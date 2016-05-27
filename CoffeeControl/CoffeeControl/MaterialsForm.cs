@@ -23,7 +23,7 @@ namespace CoffeeControl
 
             SelectedMaterials = Data.Materials;
             flowLayoutPanelArrPcs.AutoSize = true;
-            //flowLayoutPanelCurrPcs.AutoSize = true;
+            // flowLayoutPanelCurrPcs.AutoSize = true;
             foreach (Material material in SelectedMaterials)
             {
                 if (material.type == type)
