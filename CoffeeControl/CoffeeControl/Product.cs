@@ -16,10 +16,7 @@ namespace CoffeeControl
         public int posCount = 1;
         public int amountPrice = 0;
 
-        public Product(string name, string portion, int price, 
-            double coffee = 0, double milk = 0, int sugar = 0, int cream = 0, double chokolate = 0,  
-            double syropCaramel1 = 0, double syropCocount1 = 0, 
-            int cups = 1, int covers = 1, double spoon = 1)
+        public Product(string name, string portion, int price, double coffee = 0, double milk = 0, int sugar = 0, int cream = 0, double chokolate = 0, double syropCaramel1 = 0, double syropCocount1 = 0, int cups = 1, int covers = 1, double spoon = 1)
         {
 
             this.name = name;
